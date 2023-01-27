@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <head>
+        <title>My-portfolio</title>
+    </head>
+    <body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><h1>Chaitra</h1></a>
+            </div>
+            <ul id="menulist">
+                <div class="bar"  onclick="closemenu()" id="menuc"></div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Acadamic Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="bars"  onclick="openmenu()" id="menuoc"></div>
+        </nav>
+        
+        <div class="header-text">
+            <p>Frontend Developer</p>
+            <h1>Hi, I am <span>Chaitra</span><br><br>BE in Information science</h1>
+        </div>
+    </div>
+</div>
+
+<!-- -----------------------------------------------About------------------------------------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="column1">
+                <img src="images/chaitra.jpg">
+            </div>
+            <div class="column2">
+                <h1 class="sub-title">About me </h1>
+                <p>
+                    To seek an entry level position to begin my career , that can provide steady 
+                    growth and learning opportunity and practical experience extensively, where I can apply my 
+                    technical knowledge, 
+                    acquire new skills and work closely with highly experienced professionals.
+                </p>
+                <div class="tab-titles">
+                    <h6 class="tab-links active-link" onclick="opentab('skills')">Skills</h6>
+                    <h6 class="tab-links" onclick="opentab('experience')">Experience</h6>
+                    <h6 class="tab-links" onclick="opentab('education')">Education</h6>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                    <li>Java</li>
+                    <li>Mysql, Sql</li>
+                    <li>HTML</li>
+                    <li>Css, Bootstrap</li>
+                    <li>Javascript</li>
+                    <li>React js (Beginner)</li>
+                    <li>Microsoft Azure cloud concepts</li>
+                   
+                        
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                    	<li>Company - Fedilis Corporate Services Pvt. Ltd.</li>
+                        <li>(Providing services to HP Clients as Contract Worker)</li>
+                        <li>Designation- Technical Support Engineer</li>
+                        <li>Duration- Feb 2022 to Aug 2022</li>
+                        <li>Location- Bangalore (WFH during Covid-19)</li>
+                        <br>
+                        
+                        <li>Company -  Vritika Technologies</li>
+                        <li>Designation- Web Designer Intern at Vritika Technologies</li>
+                        <li>Duration- 1 year (July 2020 to june 2021)</li>
+                        <li>Location- Belagavi</li>
+                    
+                        </ul>
+                    </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                    <li> <b>Bachelor of Engineering Information Science GIT</b></li>
+                    <li>2016 - 2019</li>
+                    <li>7.85CGPA</li>
+                    <br>
+                    <li><b>Diploma Computer Science
+                        (Board Of Technical Education, Banglore)</b></li>
+                    <li>2013-2016</li>
+                    <li> 73.23%</li>
+                    <br>
+                    <li><b>SSLC
+                        Karnataka Secondary Education Board</b></li>
+                    <li>2012-2013</li>
+                    <li>   
+                        79.84%</li>
+                        
+                           
+                           
+                          
+                            
+                          
+                            
+                            
+                         
+                            
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------------------------------Hobbies--------------------------------------------------------------------- -->
+<div id="hobbies">
+    <div class="container">
+        <h1>Acadamic Projects and Certifications</h1>
+        <div class="hobbies-list">
+            <div>
+                <h3>CHILD SECURITY ALERTSYSTEM</h3>
+                <p> RFID based child security system for a school bus which will help the parents and the school to keep track of the child’s location.
+                     Every student’s entry and exit activities will be informed to the parents by generating SMS
+                  </p>
+            </div>
+            <div>
+                <h3>BUSTRACKING</h3>
+                <p> This project aims to build an Android application that automates all the aspects related to the college bus arrival. At specific pickup point the application sends SMS to students who
+                     are supposed to board the bus at the next pickup point. The message is received within the restricted range.
+                     </p>
+            </div>
+            <div>
+                <h3>CERTIFICATIONS</h3>
+                <p> 1.	Cambridge Business English Certification(B1 level).
+                    2.	Internshala Online “Web Development” Certification.
+                    
+                  </p>
+            </div>
+
+        </div>
+    </div>
+
+    
+</div>
+<div class="contact" id="contact">
+    <div class="container">
+        
+    <div class="row">
+        <div class="contact-left">
+            <h1>Contact Details</h1>
+            <p>Name: Chaitra Deshpande</p>
+            <p>Mobile: 7349755769</p>
+            <p><i class="fas fa-paper-plane"></i>Email: chaitradeshpandebgm@gmail.com</p>
+           <button class="btn2"> <a href="images/chaitrancv.pdf"   download="cv">Download</a></button>
+
+        </div>
+        <div class="contact-right">
+            <form  class="style">
+                <label>Name: </label>
+                <input type="text" name="fname" placeholder="Enter your name"> 
+                <label>Email: </label>
+                <input type="text" name="email" placeholder="Enter your email">
+                <label>Phone number: </label> 
+                <input type="number" name="fname" placeholder="Enter your phone number"> 
+                <label>Message: </label>
+                <textarea rows="5"></textarea>
+
+                <button class="btn3">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }        
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+</script>
+
+<script>
+    var omenu = document.getElementById("menulist");
+
+    function openmenu() 
+    {
+      omenu.style.right ="0";
+    }
+
+    function closemenu()
+    {
+        omenu.style.right="-200px";
+    }
+
+
+</script>
+
+    </body>
+</html>

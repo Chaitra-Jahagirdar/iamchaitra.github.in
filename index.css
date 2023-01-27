@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 25px;
+}
+
+body {
+    background-color: black;
+    color: white;
+
+}
+
+#header{
+    width: 100%;
+    height:100vh;
+ 
+    background-size: cover;
+    background-position: center;
+    margin: 0px !important;
+}
+
+#header .container{
+    padding: 10px 10%;
+}
+
+#header .container nav i {
+    color: white;
+}
+.logo{
+    color: white;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+content:"";
+width:0;
+height:2px;
+background-color: red;
+transition: 0.5s;
+position: absolute;
+left: 0;
+bottom: -6px;
+}
+
+nav ul li a:hover::after{
+width:100%;
+
+}
+
+nav ul{
+    margin-right: 0px;
+    transition: ease-in-out 1s;
+}
+
+.header-text {
+    color: white;
+    margin-top: 20%;
+
+
+}
+
+.header-text h1 span {
+    color: rgb(240, 8, 66);
+    margin: 10px 0;
+}
+.header-text h1{
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+#about{
+    padding:30px 80px;
+    background-color: black;
+}
+
+    
+
+
+
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    
+}
+
+.row .column1 {
+    flex-basis: 35%;
+}
+.column1 img{
+   width: 100%;
+   border-radius: 20px;
+
+}
+
+.column2{
+    flex-basis: 60%;
+    color: white;
+}
+
+.column2 .sub-title 
+{
+    
+    margin-bottom: 20px;
+
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0px 40px;
+
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+ 
+}
+
+.tab-links::after{
+    content:'';
+    width:0;
+    height:3px;
+    background-color: red;
+    position:absolute;
+    bottom: -8px;
+    left: 0;
+    transition: 5s;
+}
+.tab-links:hover::after{
+    width: 100%;
+
+}
+
+.tab-links.active-link::after{
+    content:'';
+    width:50%;
+    height:3px;
+    background-color: red;
+    position:absolute;
+    bottom: -8px;
+    left: 0;
+    transition: 5s;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+/* --------------------------------------------------hobbies------------------------------ */
+
+#hobbies{
+    margin: 50px 0;
+}
+
+.hobbies-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    
+}
+
+#hobbies .container{
+   padding: 40px;
+}
+
+.hobbies-list div{
+    background-color: rgb(49, 29, 29);
+    padding: 20px;
+    border-radius: 8px;
+  transition: 0.5s
+
+}
+.hobbies-list div h1{
+   margin-bottom: 10px;
+    
+}
+
+.hobbies-list div:hover{
+    background-color: rgb(252, 21, 51);
+    transform: translateY(-10px);
+
+
+}
+
+.contact-left h1{
+    margin-bottom: 30px;
+}
+.contact .container{
+    padding: 50px;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-left p {
+    margin: 16px 0;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+.contact .row {
+    margin: 40px 0;
+}
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    outline: none;
+    border: 0;
+    background-color: rgb(34, 34, 34);
+    border-radius: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 12px 0;
+    color: white;
+}
+
+.contact .btn2 {
+    background-color: rgb(252, 21, 51);
+   border-radius: 5px;
+    padding: 10px;
+    
+}
+
+.contact .btn2 a {
+   text-decoration: none;
+   color: white;
+}
+
+.contact .btn3 {
+    background-color: rgb(252, 21, 51);
+   border-radius: 5px;
+    padding: 10px 14px;
+    color: white;
+    
+}
+
+/* -----------------------------small screen--------------------------------------- */
+@media only screen and (max-width:600px){
+
+    #header .container{
+        padding: 10px 10%;
+    }
+    
+    #header .container nav i {
+        color: white;
+    }
+    .logo{
+        color: white;
+    }
+    
+    .logo a{
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li{
+        display: block;
+        list-style: none;
+        margin: 10px 20px;
+    
+    }
+    
+    nav ul {
+       background-color: rgb(240 8 66);
+       width:200px;
+       top: 0;
+       right:-200px;
+       height:100vh;
+       padding-top: 20px;
+       position: fixed;
+        
+    
+    }
+    .bars {
+        height:5px;
+        width:24px;
+        background-color: red;
+        visibility: visible;
+        border-radius: 2px;
+
+      
+    }
+    .bar {
+        height:5px;
+        width:24px;
+        background-color: rgb(247, 246, 246);
+        visibility: visible;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    #about{
+        padding:30px 10%;
+        background-color: black;
+    }
+
+  
+    
+ 
+    
+
+}
+@media only screen and (max-width:650px){
+    .row .column1 {
+        flex-basis: 100%;
+    }
+    .column1 img{
+       width: 100%;
+    
+    }
+    
+    .column2{
+        flex-basis: 100%;
+        color: white;
+    }
+
+    .contact-left{
+        flex-basis: 100%;
+    }
+    
+    .contact-left p {
+        margin: 16px 0;
+    }
+    
+    .contact-right{
+        flex-basis: 100%;
+    }
+    
+    
+}
